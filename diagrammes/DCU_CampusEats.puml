@@ -81,4 +81,5 @@ UC14 ..> UC13 : <<include>>
 UC16 ..> UC18 : <<include>>
 UC16 ..> UC19 : <<include>>
 
+' Diagramme réalisé par Mohamed Aziz Guedwar
 @enduml
