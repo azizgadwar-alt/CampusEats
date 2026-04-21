@@ -1,3 +1,4 @@
+// Classe Admin — Omar Chedly Ftouhi — Tableau de bord et statistiques
 package com.campuseats.models;
 
 import java.util.List;
