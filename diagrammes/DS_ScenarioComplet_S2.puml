@@ -1,0 +1,79 @@
+@startuml DS_ScenarioComplet_Sprint2
+title Diagramme de Séquence — Scénario Complet Multi-Fonctionnalités (Sprint 2)
+
+actor "Etudiant" as E
+actor "Livreur" as LV
+actor "Administrateur" as AD
+participant "Etudiant" as ET
+participant "Menu" as MN
+participant "Commande" as C
+participant "Livraison" as L
+participant "Admin" as A
+
+== Phase 1 : Connexion et consultation du menu ==
+E -> ET : seConnecter(email, mdp)
+activate ET
+ET --> E : ✅ Connexion réussie
+deactivate ET
+
+E -> MN : afficherMenu()
+activate MN
+MN --> E : liste des plats disponibles
+deactivate MN
+
+== Phase 2 : Passage de la commande ==
+E -> C : new Commande(id, etudiant, heure)
+activate C
+E -> C : ajouterPlat(couscous)
+E -> C : ajouterPlat(brick)
+E -> C : passerCommande()
+
+C -> C : calculerTotal()
+C -> ET : debiterSolde(total)
+activate ET
+
+alt Solde suffisant
+  ET --> C : true — Paiement OK
+  deactivate ET
+  C -> MN : reduireStock(couscous, 1)
+  activate MN
+  MN --> C : ✅ Stock mis à jour
+  deactivate MN
+  C --> E : ✅ Commande #201 confirmée
+else Solde insuffisant
+  ET --> C : false — ❌ Paiement refusé
+  C --> E : ❌ Solde insuffisant
+end
+deactivate C
+
+== Phase 3 : Livraison ==
+LV -> L : new Livraison(id, commande, livreur, point)
+activate L
+LV -> L : demarrerLivraison()
+L --> LV : 🚀 Livraison démarrée
+
+loop Jusqu'à remise confirmée
+  LV -> L : afficherStatut()
+  L --> LV : statut EN_COURS
+end
+
+LV -> L : confirmerLivraison(heure)
+L -> C : setStatut(LIVREE)
+L --> LV : ✅ Remise confirmée
+deactivate L
+
+== Phase 4 : Surveillance Admin ==
+AD -> A : afficherTableauDeBord()
+activate A
+A -> A : calculerRevenusJour()
+A -> A : compterLivraisonsEnCours()
+A -> A : verifierAlertes()
+
+opt Alerte stock détectée
+  A --> AD : ⚠️ Alerte : Stock faible pour Couscous
+end
+
+A --> AD : Tableau de bord mis à jour ✅
+deactivate A
+
+@enduml
