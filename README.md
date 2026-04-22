@@ -57,13 +57,13 @@ java -Dfile.encoding=UTF-8 -cp out com.campuseats.models.Main
 
 ## 🚀 Fonctionnalités
 
-| Fonctionnalité      | Description                                              | Responsable |
-|---------------------|----------------------------------------------------------|-------------|
-| Authentification    | Inscription, connexion et gestion des sessions étudiants | Membre 1    |
-| Menu & Stocks       | Affichage du menu du jour et gestion des stocks          | Membre 2    |
-| Commande & Paiement | Passage de commande et traitement du paiement en ligne   | Membre 3    |
-| Livraison           | Suivi de livraison et gestion des créneaux               | Membre 4    |
-| Admin Dashboard     | Tableau de bord administrateur pour la gestion globale   | Membre 5    |
+| Fonctionnalité      | Description                                              | Responsable       |
+|---------------------|----------------------------------------------------------|-------------------|
+| Authentification    | Inscription, connexion et gestion des sessions étudiants | aziz gadwar       |
+| Menu & Stocks       | Affichage du menu du jour et gestion des stocks          | chames jbali      |
+| Commande & Paiement | Passage de commande et traitement du paiement en ligne   | ghezlene agrebi   |
+| Livraison           | Suivi de livraison et gestion des créneaux               | ghofrane jlassi   |
+| Admin Dashboard     | Tableau de bord administrateur pour la gestion globale   | omar chedli ftouhi|
 
 ---
 
