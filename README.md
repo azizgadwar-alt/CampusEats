@@ -1,48 +1,87 @@
-\# 🍕 CampusEats — Système de Commande Cantine Universitaire
+# 🍕 CampusEats — Système de Commande Cantine Universitaire
 
+> **Projet AGL 2025/2026** — FSEGT, Université Tunis El Manar  
+> **Enseignante :** Fatma Karray | Avril 2026
 
+---
 
-> Projet AGL 2025/2026 — FSEGT, Université Tunis El Manar
+## 👥 Membres de l'Équipe
 
-> Enseignante : Fatma Karray | Avril 2026
+| Membre   | Nom Complet           | Rôle Scrum             | Fonctionnalité       |
+|----------|-----------------------|------------------------|----------------------|
+| Membre 1 | Mohamed Aziz Guedwar  | Product Owner + Dev    | Authentification     |
+| Membre 2 | Prénom Nom            | Scrum Master + Dev     | Menu & Stocks        |
+| Membre 3 | Prénom Nom            | Développeur            | Commande & Paiement  |
+| Membre 4 | Prénom Nom            | Développeur            | Livraison            |
+| Membre 5 | Prénom Nom            | Développeur            | Admin Dashboard      |
 
+---
 
+## 📋 Description
 
-\## Membres de l'Équipe
+**CampusEats** est une application Java permettant aux étudiants de commander leurs repas à la cantine universitaire en ligne, évitant ainsi les files d'attente.
 
+---
 
+## 🗂️ Structure du Projet
 
-| Membre | Nom Complet | Rôle Scrum | Fonctionnalité |
+```
+CampusEats/
+├── src/
+│   └── com/
+│       └── campuseats/
+│           ├── models/
+│           │   └── *.java
+│           └── Main.java
+├── out/
+└── README.md
+```
 
-|--------|------------|-----------|----------------|
+---
 
-| Membre 1 | Mohamed Aziz Guedwar | Product Owner + Dev | Authentification |
+## ⚙️ Compilation et Exécution
 
-| Membre 2 | Prénom Nom | Scrum Master + Dev | Menu \& Stocks |
+### Compilation
 
-| Membre 3 | Prénom Nom | Développeur | Commande \& Paiement |
+```bash
+javac -encoding UTF-8 -d out src/com/campuseats/models/*.java
+```
 
-| Membre 4 | Prénom Nom | Développeur | Livraison |
+### Exécution
 
-| Membre 5 | Prénom Nom | Développeur | Admin Dashboard |
-
-
-
-\## Description
-
-
-
-CampusEats permet aux étudiants de commander leurs repas
-
-à la cantine universitaire en ligne, évitant les files d'attente.
-
-
-
-\## Compilation et Exécution
-
-
-
-javac -encoding UTF-8 -d out src/com/campuseats/models/\*.java
-
+```bash
 java -Dfile.encoding=UTF-8 -cp out com.campuseats.models.Main
+```
 
+---
+
+## 🚀 Fonctionnalités
+
+| Fonctionnalité      | Description                                              | Responsable |
+|---------------------|----------------------------------------------------------|-------------|
+| Authentification    | Inscription, connexion et gestion des sessions étudiants | Membre 1    |
+| Menu & Stocks       | Affichage du menu du jour et gestion des stocks          | Membre 2    |
+| Commande & Paiement | Passage de commande et traitement du paiement en ligne   | Membre 3    |
+| Livraison           | Suivi de livraison et gestion des créneaux               | Membre 4    |
+| Admin Dashboard     | Tableau de bord administrateur pour la gestion globale   | Membre 5    |
+
+---
+
+## 🛠️ Technologies Utilisées
+
+- **Langage :** Java
+- **Méthodologie :** Scrum (Agile)
+- **Encodage :** UTF-8
+
+---
+
+## 📌 Prérequis
+
+- Java JDK 11 ou supérieur
+- Encodage système UTF-8 recommandé
+
+---
+
+## 📝 Licence
+
+Projet académique — FSEGT, Université Tunis El Manar © 2025/2026
