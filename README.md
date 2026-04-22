@@ -10,10 +10,10 @@
 | Membre   | Nom Complet           | Rôle Scrum             | Fonctionnalité       |
 |----------|-----------------------|------------------------|----------------------|
 | Membre 1 | Mohamed Aziz Guedwar  | Product Owner + Dev    | Authentification     |
-| Membre 2 | Prénom Nom            | Scrum Master + Dev     | Menu & Stocks        |
-| Membre 3 | Prénom Nom            | Développeur            | Commande & Paiement  |
-| Membre 4 | Prénom Nom            | Développeur            | Livraison            |
-| Membre 5 | Prénom Nom            | Développeur            | Admin Dashboard      |
+| Membre 2 | Chameseddine Jbali    | Scrum Master + Dev     | Menu & Stocks        |
+| Membre 3 | Ghezlene Agerbi       | Développeur            | Commande & Paiement  |
+| Membre 4 | Ghofrane Jlassi       | Développeur            | Livraison            |
+| Membre 5 | Omar chedly Ftouhi    | Développeur            | Admin Dashboard      |
 
 ---
 
@@ -31,8 +31,8 @@ CampusEats/
 │   └── com/
 │       └── campuseats/
 │           ├── models/
-│           │   └── *.java
-│           └── Main.java
+│              └── *.java
+│          
 ├── out/
 └── README.md
 ```
@@ -70,7 +70,7 @@ java -Dfile.encoding=UTF-8 -cp out com.campuseats.models.Main
 ## 🛠️ Technologies Utilisées
 
 - **Langage :** Java
-- **Méthodologie :** Scrum (Agile)
+- **Méthodologie :** Scrum (Jira)
 - **Encodage :** UTF-8
 
 ---
