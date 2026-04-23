@@ -10,9 +10,9 @@
 | Membre   | Nom Complet           | Rôle Scrum             | Fonctionnalité       |
 |----------|-----------------------|------------------------|----------------------|
 | Membre 1 | Mohamed Aziz Guedwar  | Product Owner + Dev    | Authentification     |
-| Membre 2 | Chameseddine Jbali    | Scrum Master + Dev     | Menu & Stocks        |
+| Membre 2 | Chameseddine Jbali    | Developpeur            | Menu & Stocks        |
 | Membre 3 | Ghezlene Agerbi       | Développeur            | Commande & Paiement  |
-| Membre 4 | Ghofrane Jlassi       | Développeur            | Livraison            |
+| Membre 4 | Ghofrane Jlassi       | Scrum master +Dev      | Livraison            |
 | Membre 5 | Omar chedly Ftouhi    | Développeur            | Admin Dashboard      |
 
 ---
