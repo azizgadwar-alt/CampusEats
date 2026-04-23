@@ -27,14 +27,26 @@
 
 ```
 CampusEats/
+│
+├── docs/
+│   └── captures/
+│       ├── maquettes/
+│       ├── kanban/
+│       └── reviews/
+│
+├── diagrammes/
+│   ├── DCU_CampusEats.puml
+│   ├── DC_CampusEats.puml
+│   └── DS_*.puml
+│
 ├── src/
-│   └── com/
-│       └── campuseats/
-│           ├── models/
-│              └── *.java
-│          
-├── out/
+│   └── com/campuseats/models/
+│       ├── Main.java
+│       └── *.java
+│
 └── README.md
+```
+
 ```
 
 ---
